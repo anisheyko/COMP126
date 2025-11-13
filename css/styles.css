@@ -1,0 +1,145 @@
+body{display:grid;
+    font-family: "Sour Gummy", sans-serif;
+    
+    }
+
+main{margin:1em;}
+header{margin:1em;font-family: "Sour Gummy", sans-serif;
+    }
+
+nav{background-color:#F08787;}
+nav .brand{color:white;font-size: 1.5em;}
+
+.pseudo.dropimage, button.pseudo,
+ .pseudo.button, .pseudo[type=submit],
+  .pseudo.label, .pseudo[data-tooltip]:after {
+    color:white;
+}
+
+
+.pseudo.dropimage, button.pseudo, .pseudo.button, .pseudo[type=submit], .pseudo.label, .pseudo[data-tooltip]:after{border:1.5px solid white;}
+
+.navone{background-color:#F08787;color:white;border-radius:4px;}
+.navone:hover, .navone:focus{text-decoration: underline;background-color:#db5f5f;}
+
+.navtwo{background-color:#F08787;color:white;border-radius:4px;}
+.navtwo:hover, .navtwo:focus{text-decoration: underline;background-color:#db5f5f;}
+
+.navthree{background-color:#F08787;color:white;border-radius:4px;}
+.navthree:hover, .navthree:focus{text-decoration: underline;background-color:#db5f5f;}
+
+.mail{box-shadow:2px 2px 5px 2px rgb(218, 218, 218);}
+
+form#contact-form{display:grid; 
+grid-template-columns: 1fr; padding:1.5em;gap:1em;
+}
+
+.maillist{font-size:1.2em;;color:rgb(0, 0, 0)}
+
+#name{height:3em;border-width:2px}
+#name:hover, #name:focus{border-color: #db5f5f}
+
+#email{height:3em;border-width:2px}
+#email:hover, #email:focus{border-color: #db5f5f}
+
+.dropimage, button, .submit, [type=submit]{background: linear-gradient(to right, gold, #ffa470, #ed5454);background-size: 200% 100%; /* Make the background twice as wide as the element */
+  background-position: 0% 0%;transition: background-position 2s ease-in-out;}
+
+.submit:hover, .submit:focus{background-position: 100% 0%;}
+
+  .submit{height:3em; 
+    font-family: "Sour Gummy", sans-serif;;}
+
+.palette{background-color:#FFC7A7;
+    border-radius:6px;padding:.75em;
+    transition: background-color 1.5s ease-in-out}
+
+.welcome{justify-items:center; align-content:center;text-align:center;
+    box-shadow: 2px 2px 5px 2px rgb(218, 218, 218);
+    margin-top:3em;
+    margin-bottom:1em;
+    padding:1em}
+
+.palette:hover, .palette:focus{background-color:#F08787;}
+
+body,html{box-sizing:border-box;
+}
+
+img{display:block;}
+
+
+figure{
+    display:flex;flex-wrap:wrap;
+    border-radius: 5px;
+  display: flex;
+  gap: .25rem;
+  height: 200px;
+  flex-direction: column;
+  flex: 1 1 250px;
+  justify-content: space-evenly;
+  margin-inline-start: 0;
+  margin-inline-end:0;
+}
+.img-1{
+    flex:1;
+  background-image: url("https://preview.colorkit.co/color/fc8787.png?size=social&type=opengraph");
+  background-size: cover;
+  background-position: center;
+  position:relative;
+  border-radius: 5px;
+   overflow:hidden;
+  transition:z-index 0s;
+}
+.img-2{
+    flex:1;
+    position:relative;
+  background-image: url("https://www.colorhexa.com/ffc7a7.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 5px;
+  overflow:hidden;
+  transition:z-index 0s;
+  
+}
+
+.img-3{
+    flex:1;
+  background-image: url("https://htmlcolors.com/color-image/fee2ad.png");
+  background-size: cover;
+  background-position: center;
+  position:relative;
+   overflow:hidden;
+  transition:z-index 0s;
+  border-radius: 5px;
+}
+
+.img-1, .img-2, .img-3 {
+  animation: shrink-box 0.3s forwards;
+}
+.img-1:hover,.img-2:hover,.img-3:hover, .img-1:focus,.img-2:focus, .img-3:focus {
+  z-index: 10;
+  animation: grow-box 0.3s forwards;
+}
+
+@keyframes grow-box {
+  from { width: 100%; height: 100%; top: 0; left: 0; }
+  to { width: 120%; height: 120%; top: -10%; left: -10%; }
+}
+
+@keyframes shrink-box {
+  from { width: 120%; height: 120%; top: -10%; left: -10%; }
+  to { width: 100%; height: 100%; top: 0; left: 0; }
+}
+
+footer{background-color:#F08787;
+    margin:none; padding-left:1em;
+border-bottom-left-radius: 15px;
+border-bottom-right-radius: 15px;color:white;}
+
+@media screen and (min-width: 768px){
+    main{display:flex;flex-flow:row wrap;justify-content:center;}
+    .welcome{width:40%;margin:2%;}
+    .mail{width:52%;margin:2%}
+    figure{width:30%;margin:1em;max-width: 300px;justify-content:center;}
+    .navone,.navtwo,.navthree{padding:.5em;}
+}
